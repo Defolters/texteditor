@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane prefHeight="78.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="7.0" layoutY="40.0" prefHeight="25.0" prefWidth="281.0" />
+      <Button layoutX="320.0" layoutY="40.0" mnemonicParsing="false" text="Find" />
+      <Label layoutX="161.0" text="Search">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

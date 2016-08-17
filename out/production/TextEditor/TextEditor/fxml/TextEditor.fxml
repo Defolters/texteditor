@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="200.0" minWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TextEditor.Controllers.Controller">
+   <children>
+    <MenuBar minWidth="-Infinity">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#actionCreateNew" text="New" />
+            <MenuItem mnemonicParsing="false" onAction="#actionOpenFile" text="Open…" />
+            <MenuItem mnemonicParsing="false" onAction="#actionSaveFile" text="Save" />
+            <MenuItem mnemonicParsing="false" onAction="#actionSaveAsFile" text="Save As…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#actionQuit" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#actionUndo" text="Undo" />
+            <MenuItem mnemonicParsing="false" onAction="#actionRedo" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#actionCut" text="Cut" />
+            <MenuItem mnemonicParsing="false" onAction="#actionCopy" text="Copy" />
+            <MenuItem mnemonicParsing="false" onAction="#actionPaste" text="Paste" />
+            <MenuItem mnemonicParsing="false" onAction="#actionDelete" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#actionSelectAll" text="Select All" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionClear" text="Clear" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Tools">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showSearch" text="Find" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionWordCount" text="Word count" />
+              </items>
+            </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <TextArea minHeight="200.0" minWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
